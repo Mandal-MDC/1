@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandal Digital Credit</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#e3f2fd,#bbdefb);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  width:90%;
+  max-width:420px;
+  background:#fff;
+  padding:30px 22px;
+  border-radius:24px;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.logo{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:4px solid #2196f3;
+  object-fit:cover;
+  margin-bottom:12px;
+}
+
+h1{font-size:20px;font-weight:600}
+p{font-size:14px;color:#555;margin-bottom:20px}
+
+.main-btn{
+  width:100%;
+  padding:15px;
+  margin:10px 0;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(90deg,#2196f3,#42a5f5);
+  color:#fff;
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+  text-decoration:none;
+  display:block;
+}
+
+.section{display:none;margin-top:6px}
+
+.sub-btn{
+  width:100%;
+  padding:14px;
+  margin-top:8px;
+  border:none;
+  border-radius:12px;
+  background:#f5f9ff;
+  font-weight:600;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.sub-content{
+  display:none;
+  background:#eef5ff;
+  padding:12px;
+  border-radius:10px;
+  margin-top:6px;
+  font-size:14px;
+}
+
+.sub-content a{
+  color:#0d47a1;
+  font-weight:600;
+  text-decoration:none;
+  display:block;
+  margin:6px 0;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<img src="logo.png" class="logo">
+<h1>Mandal Digital Credit</h1>
+<p>Санхүүгийн найдвартай шийдэл</p>
+
+<!-- ================= APP ТАТАХ ================= -->
+<button class="main-btn" onclick="toggle('app')">📲 App татах</button>
+<div id="app" class="section">
+  <button class="sub-btn" onclick="toggle('android')">🤖 Android</button>
+  <div id="android" class="sub-content">
+    <a href="https://onelink.to/kdsp2f" target="_blank">Play Store татах</a>
+  </div>
+
+  <button class="sub-btn" onclick="toggle('ios')">🍎 iOS</button>
+  <div id="ios" class="sub-content">
+    <a href="https://onelink.to/kdsp2f" target="_blank">App Store татах</a>
+  </div>
+</div>
+
+<!-- ================= ГАРЫН АВЛАГА ================= -->
+<button class="main-btn" onclick="toggle('manual')">📘 Гарын авлага</button>
+<div id="manual" class="section">
+  <button class="sub-btn" onclick="toggle('m1')">📄 App ашиглах гарын авлага</button>
+  <div id="m1" class="sub-content">
+    <a href="manual-app.pdf" target="_blank">PDF нээх</a>
+  </div>
+</div>
+
+<!-- ================= ХОЛБОО БАРИХ ================= -->
+<button class="main-btn" onclick="toggle('contacts')">☎️ Холбоо барих</button>
+<div id="contacts" class="section">
+
+<button class="sub-btn" onclick="toggle('c1')">📞 Төв салбар</button>
+<div id="c1" class="sub-content">
+<a href="tel:+97676001661">7600-1661</a>
+</div>
+
+<button class="sub-btn" onclick="toggle('c2')">📞 Сонгинохайрхан</button>
+<div id="c2" class="sub-content">
+<a href="tel:+97688641661">8864-1661</a>
+</div>
+
+<button class="sub-btn" onclick="toggle('c3')">📞 Да Хүрээ</button>
+<div id="c3" class="sub-content">
+<a href="tel:+97680771661">8077-1661</a>
+</div>
+
+</div>
+
+<!-- ================= FACEBOOK ================= -->
+<button class="main-btn" onclick="toggle('fb')">📘 Facebook</button>
+<div id="fb" class="section">
+  <div class="sub-content" style="display:block">
+    <a href="https:https://www.facebook.com/mandaldigitalcredit" target="_blank">🌐 Мандал Дижитал Кредит</a>
+    <a href="https://www.facebook.com/CARzeelapp" target="_blank">🌐 Car zeel</a>
+  </div>
+</div>
+
+</div>
+
+<script>
+function toggle(id){
+  const el=document.getElementById(id);
+  el.style.display = el.style.display==="block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
+	
